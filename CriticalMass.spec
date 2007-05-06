@@ -1,6 +1,6 @@
 %define name	CriticalMass
-%define version	1.0.0
-%define release %mkrel 3
+%define version	1.0.2
+%define release %mkrel 1
 %define Summary Arcade Shooter
 
 Name:		%{name}
