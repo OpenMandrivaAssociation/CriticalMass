@@ -1,6 +1,6 @@
 %define name	CriticalMass
 %define version	1.0.2
-%define release %mkrel 1
+%define release %mkrel 2
 %define Summary Arcade Shooter
 
 Name:		%{name}
@@ -15,7 +15,7 @@ License:	GPL
 Group:		Games/Arcade
 URL:		http://criticalmass.sourceforge.net
 Summary:	%{Summary}
-BuildRequires:	SDL_mixer-devel SDL_image-devel zlib-devel libpng-devel
+BuildRequires:	SDL_mixer-devel SDL_image-devel zlib-devel libpng-devel MesaGL-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:	SDL_mixer SDL_image zlib
 
