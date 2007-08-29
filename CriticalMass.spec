@@ -87,7 +87,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}*.png
 %{_miconsdir}/%{name}*.png
-%{_mandir}/man6/critter.6.bz2
+%{_mandir}/man6/critter.6*
 %defattr(755,root,root,755)
 %{_gamesbindir}/critter
 %{_gamesbindir}/Packer
