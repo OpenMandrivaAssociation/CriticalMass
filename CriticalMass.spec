@@ -41,16 +41,6 @@ install -m644 game/resource.dat $RPM_BUILD_ROOT%{_gamesdatadir}/Critical_Mass
 install -d $RPM_BUILD_ROOT%{_mandir}/man6
 install -m644 critter.6 $RPM_BUILD_ROOT%{_mandir}/man6
 
-install -d $RPM_BUILD_ROOT%{_menudir}
-cat <<EOF >$RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="%{_gamesbindir}/critter" \
-		  icon=%{name}.png \
-		  needs="x11" \
-		  section="More Applications/Games/Arcade" \
-		  title="Critical Mass"\
-		  longtitle="%{Summary}"\
-                  xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -82,7 +72,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Readme.html COPYING TODO
 %{_gamesdatadir}/Critical_Mass
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}*.png
