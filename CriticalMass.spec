@@ -1,6 +1,6 @@
 %define name	CriticalMass
 %define version	1.0.2
-%define release %mkrel 6
+%define release %mkrel 7
 %define Summary Arcade Shooter
 
 Name:		%{name}
@@ -10,8 +10,8 @@ Source0:	http://criticalmass.sourceforge.net/criticalmass/%{name}-%{version}.tar
 Source11:	%{name}-16x16.png
 Source12:	%{name}-32x32.png
 Source13:	%{name}-48x48.png
-#Patch1:		CriticalMass-fix-compile-gcc-3.4.patch.bz2
-License:	GPL
+Patch0:		%{name}-1.0.2-fix-gcc-43.patch
+License:	GPLv2
 Group:		Games/Arcade
 URL:		http://criticalmass.sourceforge.net
 Summary:	%{Summary}
@@ -24,10 +24,10 @@ Critical Mass (aka Critter) is an SDL/OpenGL space shoot'em up game.
 
 %prep
 %setup -q
-
-%configure --prefix=%{_gamesbindir} --bindir=%{_gamesbindir} --datadir=%{_gamesdatadir} --libdir=%_libdir --enable-dyngl
+%patch0 -p1 -b .gcc43
 
 %build
+%configure --prefix=%{_gamesbindir} --bindir=%{_gamesbindir} --datadir=%{_gamesdatadir} --libdir=%_libdir --enable-dyngl
 %make
 
 %install
