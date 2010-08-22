@@ -27,7 +27,7 @@ Critical Mass (aka Critter) is an SDL/OpenGL space shoot'em up game.
 %patch0 -p1 -b .gcc43
 
 %build
-%configure --prefix=%{_gamesbindir} --bindir=%{_gamesbindir} --datadir=%{_gamesdatadir} --libdir=%_libdir --enable-dyngl
+%configure2_5x --prefix=%{_gamesbindir} --bindir=%{_gamesbindir} --datadir=%{_gamesdatadir} --libdir=%_libdir --enable-dyngl
 %make
 
 %install
