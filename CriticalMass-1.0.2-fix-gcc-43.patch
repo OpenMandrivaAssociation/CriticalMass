@@ -1,0 +1,67 @@
+diff -uNr CriticalMass-1.0.2.ori/tinyxml/tinyxml.cpp CriticalMass-1.0.2/tinyxml/tinyxml.cpp
+--- CriticalMass-1.0.2.ori/tinyxml/tinyxml.cpp	2009-05-20 02:04:36.000000000 +0200
++++ CriticalMass-1.0.2/tinyxml/tinyxml.cpp	2009-05-20 02:19:37.000000000 +0200
+@@ -21,6 +21,8 @@
+ distribution.
+ */
+ 
++#include <cstdlib>
++#include <cstring>
+ #include "tinyxml.h"
+ 
+ 
+diff -uNr CriticalMass-1.0.2.ori/tinyxml/tinyxmlparser.cpp CriticalMass-1.0.2/tinyxml/tinyxmlparser.cpp
+--- CriticalMass-1.0.2.ori/tinyxml/tinyxmlparser.cpp	2009-05-20 02:04:36.000000000 +0200
++++ CriticalMass-1.0.2/tinyxml/tinyxmlparser.cpp	2009-05-20 02:19:37.000000000 +0200
+@@ -22,6 +22,7 @@
+ */
+ 
+ 
++#include <cstring>
+ #include "tinyxml.h"
+ #include <ctype.h>
+ 
+diff -uNr CriticalMass-1.0.2.ori/utils/ResourceManager.cpp CriticalMass-1.0.2/utils/ResourceManager.cpp
+--- CriticalMass-1.0.2.ori/utils/ResourceManager.cpp	2009-05-20 02:04:36.000000000 +0200
++++ CriticalMass-1.0.2/utils/ResourceManager.cpp	2009-05-20 02:19:37.000000000 +0200
+@@ -12,6 +12,7 @@
+ // ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ // FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+ //
++#include <cstring>
+ #include <iomanip>
+ #include <sys/types.h>
+ #include <sys/stat.h>
+diff -uNr CriticalMass-1.0.2.ori/utils/Value.hpp CriticalMass-1.0.2/utils/Value.hpp
+--- CriticalMass-1.0.2.ori/utils/Value.hpp	2009-05-20 02:04:36.000000000 +0200
++++ CriticalMass-1.0.2/utils/Value.hpp	2009-05-20 02:19:37.000000000 +0200
+@@ -15,6 +15,7 @@
+ #ifndef _Value_hpp_
+ #define _Value_hpp_
+ 
++#include <cstdlib>
+ #include <stdio.h>
+ #include <string>
+ 
+diff -uNr CriticalMass-1.0.2.ori/utils/zStream.cpp CriticalMass-1.0.2/utils/zStream.cpp
+--- CriticalMass-1.0.2.ori/utils/zStream.cpp	2009-05-20 02:04:36.000000000 +0200
++++ CriticalMass-1.0.2/utils/zStream.cpp	2009-05-20 02:21:51.000000000 +0200
+@@ -12,6 +12,7 @@
+ // ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ // FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+ //
++#include <cstdlib>
+ #include <Trace.hpp>
+ #include <Endian.hpp>
+ #include <zStream.hpp>
+diff -uNr CriticalMass-1.0.2.ori/utils/zStreamBufferImplZLib.cpp CriticalMass-1.0.2/utils/zStreamBufferImplZLib.cpp
+--- CriticalMass-1.0.2.ori/utils/zStreamBufferImplZLib.cpp	2009-05-20 02:04:36.000000000 +0200
++++ CriticalMass-1.0.2/utils/zStreamBufferImplZLib.cpp	2009-05-20 02:22:34.000000000 +0200
+@@ -12,6 +12,7 @@
+ // ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ // FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details
+ //
++#include <cstdlib>
+ #include <Trace.hpp>
+ #include <zStreamBufferImplZLib.hpp>
+ 
