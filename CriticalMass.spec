@@ -16,7 +16,7 @@ Patch2:		criticalmass-1.0.2-libpng15.patch
 Patch3:		criticalmass-1.0.2-system_curl.patch
 License:	GPLv2
 Group:		Games/Arcade
-URL:		http://criticalmass.sourceforge.net
+URL:		https://criticalmass.sourceforge.net
 Summary:	%{Summary}
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(glw)
