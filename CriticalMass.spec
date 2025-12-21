@@ -18,6 +18,11 @@ License:	GPLv2
 Group:		Games/Arcade
 URL:		https://criticalmass.sourceforge.net
 Summary:	%{Summary}
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(glw)
 BuildRequires:	pkgconfig(zlib)
